@@ -42,6 +42,7 @@
             this.mMuestra = new System.Windows.Forms.ToolStripMenuItem();
             this.sbmCrearEtiqueta = new System.Windows.Forms.ToolStripMenuItem();
             this.sbmIngresarMuestra = new System.Windows.Forms.ToolStripMenuItem();
+            this.sbmConsultaMuestra = new System.Windows.Forms.ToolStripMenuItem();
             this.mExamenes = new System.Windows.Forms.ToolStripMenuItem();
             this.sbmIngresarExamenes = new System.Windows.Forms.ToolStripMenuItem();
             this.sbmConsultarExamenes = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,7 +54,6 @@
             this.ingresarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AseguradoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.sbmConsultaMuestra = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -164,12 +164,19 @@
             this.sbmCrearEtiqueta.Name = "sbmCrearEtiqueta";
             this.sbmCrearEtiqueta.Size = new System.Drawing.Size(216, 24);
             this.sbmCrearEtiqueta.Text = "Crear Etiqueta";
+            this.sbmCrearEtiqueta.Click += new System.EventHandler(this.sbmCrearEtiqueta_Click);
             // 
             // sbmIngresarMuestra
             // 
             this.sbmIngresarMuestra.Name = "sbmIngresarMuestra";
             this.sbmIngresarMuestra.Size = new System.Drawing.Size(216, 24);
             this.sbmIngresarMuestra.Text = "Ingresar";
+            // 
+            // sbmConsultaMuestra
+            // 
+            this.sbmConsultaMuestra.Name = "sbmConsultaMuestra";
+            this.sbmConsultaMuestra.Size = new System.Drawing.Size(216, 24);
+            this.sbmConsultaMuestra.Text = "Modificar y Consultar";
             // 
             // mExamenes
             // 
@@ -263,12 +270,6 @@
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // sbmConsultaMuestra
-            // 
-            this.sbmConsultaMuestra.Name = "sbmConsultaMuestra";
-            this.sbmConsultaMuestra.Size = new System.Drawing.Size(216, 24);
-            this.sbmConsultaMuestra.Text = "Modificar y Consultar";
             // 
             // MenuPrincipal
             // 

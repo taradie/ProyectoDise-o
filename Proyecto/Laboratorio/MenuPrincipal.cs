@@ -72,5 +72,11 @@ namespace Laboratorio
             frmConsultaCita ver = new frmConsultaCita();
             ver.Show();
         }
+
+        private void sbmCrearEtiqueta_Click(object sender, EventArgs e)
+        {
+            frmMuestra muestra = new frmMuestra();
+            muestra.Show();
+        }
     }
 }
