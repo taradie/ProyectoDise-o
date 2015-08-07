@@ -35,7 +35,7 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.lblRequerimientos = new System.Windows.Forms.Label();
             this.txtRequerimientos = new System.Windows.Forms.TextBox();
-            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblDescripcionMuestra = new System.Windows.Forms.Label();
             this.txtDescripcionMuestra = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -76,6 +76,7 @@
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnCancelar
             // 
@@ -110,16 +111,16 @@
             this.txtRequerimientos.Size = new System.Drawing.Size(460, 112);
             this.txtRequerimientos.TabIndex = 32;
             // 
-            // lblNombre
+            // lblDescripcionMuestra
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.BackColor = System.Drawing.Color.Transparent;
-            this.lblNombre.Font = new System.Drawing.Font("Calibri", 12F);
-            this.lblNombre.Location = new System.Drawing.Point(163, 180);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(147, 19);
-            this.lblNombre.TabIndex = 33;
-            this.lblNombre.Text = "Descripcion Muestra:";
+            this.lblDescripcionMuestra.AutoSize = true;
+            this.lblDescripcionMuestra.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescripcionMuestra.Font = new System.Drawing.Font("Calibri", 12F);
+            this.lblDescripcionMuestra.Location = new System.Drawing.Point(163, 180);
+            this.lblDescripcionMuestra.Name = "lblDescripcionMuestra";
+            this.lblDescripcionMuestra.Size = new System.Drawing.Size(147, 19);
+            this.lblDescripcionMuestra.TabIndex = 33;
+            this.lblDescripcionMuestra.Text = "Descripcion Muestra:";
             // 
             // txtDescripcionMuestra
             // 
@@ -136,7 +137,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 361);
             this.Controls.Add(this.txtDescripcionMuestra);
-            this.Controls.Add(this.lblNombre);
+            this.Controls.Add(this.lblDescripcionMuestra);
             this.Controls.Add(this.txtRequerimientos);
             this.Controls.Add(this.lblRequerimientos);
             this.Controls.Add(this.panel1);
@@ -158,7 +159,7 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label lblRequerimientos;
         private System.Windows.Forms.TextBox txtRequerimientos;
-        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblDescripcionMuestra;
         private System.Windows.Forms.TextBox txtDescripcionMuestra;
 
     }
